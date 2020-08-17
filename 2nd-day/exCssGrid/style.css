@@ -1,0 +1,102 @@
+/* #container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+    "s m m m m"
+    "s m m m m"
+    "s m m m m"
+    "s m m m m"
+    "s m m m m"
+    "s f f f f";
+} */
+#container{
+    display: grid;
+    width: 90vw;
+    height: 90vh;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas:
+       "s m"
+       "s f";
+}
+
+#main{
+    grid-area: m;
+    display: grid;
+    background-color: rgb(190, 190, 190);
+    grid-template-rows: repeat(5 ,1fr);
+}
+
+#side{
+    
+    font-family:'Do Hyeon', sans-serif;
+    grid-area: s;
+    display: grid;
+    background-color: purple;
+    grid-template-rows: repeat(5 , 1fr);
+    align-content: center;
+    
+}
+
+#buttom{
+    grid-area: f;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+}
+
+.side-child{
+    margin-left: 10px;
+    width: 100px;
+    height: fit-content;
+    display: grid;
+    background-color: rgb(212, 4, 212);
+    align-content: center;
+    justify-content: left;
+}
+.friends{
+    display: grid;
+    background-color: purple;
+    margin-top: 10px;
+}
+
+
+.sendButton{
+    background-color: rgb(212, 4, 212);
+    display: grid;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;
+}
+
+.text-container-left{
+    background-color: grey;
+    height:fit-content ;
+    max-width: fit-content;
+    border-radius: 5px ;
+    grid-template-columns: 10fr 1fr;
+}
+.text-container-right{
+    height:fit-content ;
+    width: fit-content;
+    background-color:lightgreen;
+    border-radius: 5px ;
+    grid-template-columns: 10fr 1fr;
+    justify-self:right;
+}
+
+
+.text{
+    display: inline;
+    font-family: 'Russo One', sans-serif;
+    font-size: 15px;
+}
+.time{
+    display: inline;
+    font-family: 'Russo One', sans-serif;
+    font-size: 9px;
+    justify-content: end;
+}
+
