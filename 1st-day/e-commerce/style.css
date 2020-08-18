@@ -1,0 +1,42 @@
+#container{
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "n n"
+    "s m";
+}
+
+#nav-bar{
+    grid-area: n;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    background-color: rgb(136, 176, 75);
+    justify-content: center;
+    align-content: center;
+}
+
+#result-container{
+    grid-area: m;
+    background-color: rgb(217, 241, 181);
+}
+
+#side{
+    grid-area: s;
+    background-color: rgb(163, 206, 100);
+}
+
+#aboutUS{
+    width: fit-content;
+    height: fit-content;
+}
+#allP{
+    width: fit-content;
+    height: fit-content;
+}
+#cartP{
+    width: fit-content;
+    height: fit-content;
+}
